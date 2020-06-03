@@ -63,7 +63,7 @@ jobs:
       uses: Azure/functions-container-action@v1
       id: fa
       with:
-        app-name: mlopstestfunctionapp
+        app-name: azdemofunctionapp12333
         image: ${{ steps.aml_deploy.outputs.package_location }}
     
     - name: 'use the published functionapp url in upcoming steps'
