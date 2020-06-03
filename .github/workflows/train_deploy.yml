@@ -48,7 +48,7 @@ jobs:
     # Deploy model in Azure Machine Learning to ACI
     - name: Deploy model
       id: aml_deploy
-      uses: Azure/aml-deploy@pull_docker_image
+      uses: Azure/aml-deploy@docker_container_options
       with:
           azure_credentials: ${{ secrets.AZURE_CREDENTIALS }}
           model_name:  ${{ steps.aml_registermodel.outputs.model_name }}
